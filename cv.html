@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currilum vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type=" text/css" href="CSS/Estilos.css">
+    
+</head>
+<body>
+   
+    <section>
+        <img src="Juli.jpg" alt="mi fotografía" width="200px" height="200px">
+
+        <div>
+            <h1>Julieta Campos</h1>
+            <h3>Lic. Analista de sistemas</h3>
+        </div>
+    </section>
+
+    <div class="contenedor">
+        
+        <div class="info">
+            <h4>Información personal</h4>
+            <p> Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales.
+            Siempre tengo la mejor disposición para la realización de mis labores y excelentes aptitudes
+            de trabajo en equipo.</p>
+
+            <address> <br>
+            <u>Datos:</u> <br>
+            Teléfono: 1122546180<br>
+            Nacionalidad: Argentina<br>
+            Domicilio: Av. Santa Fe 4578, Capital Federal<br>
+            </address>
+
+            <div class="estudios">
+                <h4>Mis estudios</h4>
+                <p>
+                    <u>
+                    Secundaria
+                    </u>
+                </p>
+    
+                    <ul>
+                        <li>Escuela de comercio N°31</li>
+                        <p>Título obtenido: Bachillerato orientado en infórmatica</p>
+                        <p>Périodo: 2008-2012</p>
+                    </ul>
+    
+                <p>
+                    <u>
+                    Universidad
+                    </u>
+                </p>
+    
+                    <ul>
+                        <li> Universidad de Buenos Aires(UBA)</li>
+                            <p>Título obtenido: Linciatura en Analisis de sistemas.</p>
+                            <p>Périodo: 2013-2017</p>
+                    </ul>
+            
+                <p>
+                    <u>
+                        CUI: Centro universitario de idiomas
+                    </u>
+                </p>
+                    <ul>
+                        <li>Inglés: Diploma ciclo de espacialización. </li>
+                    </ul>
+            </div>
+    
+        </div>
+
+        <div class="trabajos">
+            <h4>Experencia laboral</h4>
+            <p>
+                <u>
+                    Penta security solutions: 2012-2014 
+                </u> <br>
+                Atención telefónica a clientes.<br>
+                Brindar soporte sobre un sistema informático de gestión.<br>
+                Reportar tareas con herramientas de gestión.<br>
+                Conocimiento básico de uso de pc, navegación en internet, Windows, paquete office y 
+                facilidad en el uso de sistemas de gestión.<br>
+                Conocimientos en teléfonos con conmutador.<br>
+            </p>
+    
+            <p>
+                <u>
+                    C&S informatica S.A: 2014/2016
+                </u> <br>
+                Realizar proyectos para clientes.<br>
+                Manejo y conocimientos en la arquitecturas basadas en microservicios, kubernetes, web rest api,
+                unit testing, DI/loc, mongoDB, go, kafka, rabbitMQ, git, jira, docker, CICD.<br>
+            </p>
+    
+            <p>
+                <u>
+                    Universo aventura: 2016 hasta la acualidad
+                </u> <br>
+                Dar soporte a todas las personas de la compañia.<br>
+                Mantenimiento preventivo de equipos informáticos de toda la compañia.<br>
+                Soporte para cualquier actividad de integración de tecnología, servicios relacionados
+                con la gestion del IT y gestionando partes de las demandas y ejecucíon.<br>
+                Manejo del presupuesto.<br>
+                Manejo de ERP, herramientas FTP y configuración de impresoras.<br>
+                Conocimiento en reparación de PC.<br>
+            </p>
+        </div>
+
+    </div>
+
+        <h2>Contactate</h2>
+
+        <form action="" class="formulario" id="formulario">
+           
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" 
+                    placeholder="Escribe tu nombre">
+
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">El nombre tiene que ser de 6 a 20 digitos y solo 
+                    puede obtener letras</p>
+            </div>
+
+        </div>
+
+        <div class="formulario_grupo" id="grupo_apellido">
+            <label for="apellido" class="formulario_label">Apellido</label>
+                
+                <di class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="apellido" id="apellido" 
+                    placeholder="Escribe tu apellido">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">El nombre tiene que ser de 6 a 20 digitos y solo 
+                    puede obtener letras.
+                </p>
+        </div>
+
+        <div class="formulario_grupo" id="grupo_correo">
+            <label for="correo" class="formulario_label">Correo Electrónico</label>
+            <div class="formulario_grupo-input">
+                <input type="email" class="formulario_input" name="correo" id="correo" 
+                placeholder="juan12@gmail.com">
+
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario_input-error">El correo solo puede contener letras,numeros,puntos
+                guiones y gion bajo.
+            </p>
+        </div>
+        <div class="formulario_grupo" id="grupo_texto">
+            <label for="texto" class="formulario_label">Texto</label>
+            <textarea type="text" class="formulario_input" name="mensaje" id="mensaje"
+            placeholder="Escriba su mensaje aquí"></textarea>
+        </div>
+
+        <div class="formulario_grupo" id="grupo_terminos">
+            <label class="formulario_label">
+                <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"> 
+                Acepto terminos y condiciones
+            </label>
+        </div>
+        
+        <div class="formulario_mensaje" id="formulario_mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario
+            correctamente. </p>
+        </div>
+
+        <div class="formulario_grupo formulario_grupo-boton-enviar">
+            <button type="submit" class="formulario_boton">Enviar"</button>
+            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+        </div> 
+        
+        </form>
+
+    <script src="JS/cv.js"></script>
+    <script src="https://kit.fontawesome.com/ed50afd882.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
